@@ -36,6 +36,10 @@ void matrix_scan_user(void) {
         SEQ_THREE_KEYS(KC_C, KC_A, KC_D) {
             SEND_STRING(SS_LCTL(SS_LALT(SS_TAP(X_DEL))));
         }
+        // powertoys color picker
+        SEQ_TWO_KEYS(KC_C, KC_P) {
+            SEND_STRING(SS_LGUI(SS_LSFT("c")));
+        }
         // calculator
         SEQ_ONE_KEY(KC_C) {
             SEND_STRING(SS_TAP(X_CALC));
@@ -43,6 +47,10 @@ void matrix_scan_user(void) {
         // open music player
         SEQ_ONE_KEY(KC_M) {
             SEND_STRING(SS_TAP(X_MSEL));
+        }
+        // audio mute
+        SEQ_TWO_KEYS(KC_M, KC_U) {
+            SEND_STRING(SS_TAP(X_MUTE));
         }
         // system sleep
         SEQ_TWO_KEYS(KC_C, KC_S) {
