@@ -56,5 +56,9 @@ void matrix_scan_user(void) {
         SEQ_TWO_KEYS(KC_C, KC_S) {
             SEND_STRING(SS_TAP(X_SYSTEM_SLEEP));
         }
+        // escape (for emergencies....)
+        SEQ_THREE_KEYS(KC_E, KC_S, KC_C) {
+            SEND_STRING(SS_TAP(X_ESC));
+        }
     }
 }
