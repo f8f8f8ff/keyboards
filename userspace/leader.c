@@ -44,6 +44,10 @@ void matrix_scan_user(void) {
         SEQ_ONE_KEY(KC_C) {
             SEND_STRING(SS_TAP(X_CALC));
         }
+        // pause / volume mixer
+        SEQ_ONE_KEY(KC_V) {
+            SEND_STRING(SS_TAP(X_PAUSE));
+        }
         // open music player
         SEQ_ONE_KEY(KC_M) {
             SEND_STRING(SS_TAP(X_MSEL));
@@ -59,6 +63,10 @@ void matrix_scan_user(void) {
         // escape (for emergencies....)
         SEQ_THREE_KEYS(KC_E, KC_S, KC_C) {
             SEND_STRING(SS_TAP(X_ESC));
+        }
+        // capslock
+        SEQ_TWO_KEYS(KC_C, KC_L) {
+            SEND_STRING(SS_TAP(X_CAPS));
         }
     }
 }
