@@ -2,10 +2,10 @@
 
 enum layer_number {
   _QWERTY = 0,
+  _GAME,
   _LOWER,
   _RAISE,
   _ADJUST,
-  _GAME,
 };
 
 #define KY_CSPC LCTL(KC_SPC)
