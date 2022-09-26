@@ -1,0 +1,2 @@
+OLED_ENABLE = no
+BOOTLOADER = qmk-dfu

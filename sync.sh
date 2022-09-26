@@ -24,6 +24,7 @@ if [ -d "${qmk_home:?}" ]; then
     sync_files "4x12" "${qmk_home:?}/keyboards/handwired/4x12"
     sync_files "lily58" "${qmk_home:?}/keyboards/lily58/keymaps/f8"
     sync_files "ploopy_mini" "${qmk_home:?}/keyboards/ploopyco/trackball_mini/keymaps/f8"
+	sync_files "crkbd" "${qmk_home:?}/keyboards/crkbd/keymaps/f8"
 else
     printf 'invalid qmk_home\n'
 fi
