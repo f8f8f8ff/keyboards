@@ -1,2 +1,4 @@
 OLED_ENABLE = no
 BOOTLOADER = qmk-dfu
+LEADER_ENABLE = yes
+EXTRAKEY_ENABLE = yes
