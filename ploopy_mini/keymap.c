@@ -28,7 +28,7 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT( /* Base */
-        KC_BTN1, KC_BTN3, KC_BTN2,
-        DRAG_SCROLL, TD(TD_BTN4_BTN5)
+        KC_BTN1, KC_NO, DRAG_SCROLL,
+        KC_BTN2, KC_BTN3
     ),
 };

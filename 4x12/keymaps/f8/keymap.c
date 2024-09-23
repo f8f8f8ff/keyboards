@@ -17,6 +17,7 @@ enum {
 #define RAISE  MO(_RAISE)
 #define NUMBR  MO(_NUM)
 #define ESC_CR LCTL_T(KC_ESC)
+#define TAB_GUI LGUI_T(KC_TAB)
 #define NXT_PRV TD(TD_MNXT_MPRV)
 #define PLY_SEL TD(TD_MPLY_MSEL)
 #define KY_ZMIN LCTL(KC_EQL)
@@ -25,10 +26,10 @@ enum {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_QWERTY] = LAYOUT(
-  KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC, \
+  TAB_GUI, KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC, \
   ESC_CR,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, \
   KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT , \
-  NUMBR,   KC_LCTL, KC_LALT, KC_LGUI, LOWER,  KC_SPC,  KC_SPC,   RAISE,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT \
+  _______, _______, _______, KC_LGUI, LOWER,  KC_SPC,  KC_SPC,   RAISE,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT \
 ),
 
 [_LOWER] = LAYOUT( \

@@ -1,0 +1,4 @@
+double tap leader for capsword
+normal case
+caseless carry case
+add reset to leader combo
